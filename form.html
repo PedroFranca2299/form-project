@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>Contato</h1>
+    <form action="process-form.php">
+        <label for="name">Nome</label>
+        <input type="text" id="name">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
+
+        <label for="message">Mensagem</label>
+        <textarea id="message"></textarea>
+
+        <label for="priority">Prioridade</label>
+        <select id="priority">
+            <option value="1">Baixa</option>
+            <option value="2" selected>Média</option>
+            <option value="3">Alta</option>
+        </select>
+
+        <fieldset>
+            <legend>Tipo</legend>
+            <label>
+                <input type="radio" name="type" value="1" checked>
+                 Reclamação
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="type" value="2">
+                 Sugestão
+            </label>
+        </fieldset>
+
+        <label>
+            <input type="checkbox">
+             Eu concordo com os termos de uso
+        </label>
+
+        <br>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
